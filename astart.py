@@ -24,7 +24,7 @@ def a_star(graph_i, start, goal):
     open_nodes = []
     heapq.heappush(open_nodes, (0, start))
     came_from = {}
-    cost_so_far = {start: 0}
+    cost_so_far = {start: 0} # função g
 
     while open_nodes:
         _, current = heapq.heappop(open_nodes)
@@ -39,7 +39,7 @@ def a_star(graph_i, start, goal):
 
         for neighbor, distance in graph_i.edges[current]:
             new_cost = cost_so_far[current] + distance
-            if neighbor not in cost_so_far or new_cost < cost_so_far[neighbor]:
+            if neighbor not in cost_so_far or new_cost < cost_so_far[neighbor]:  # função g
                 cost_so_far[neighbor] = new_cost
                 priority = new_cost + manhattan_distance(neighbor, goal)
                 heapq.heappush(open_nodes, (priority, neighbor))
