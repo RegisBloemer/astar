@@ -13,3 +13,7 @@ O script segue os seguintes passos:
 9. Plote o gráfico e o caminho encontrado usando a função `plot_graph`.
 
 O script exibirá o gráfico com o caminho mais curto entre os nós inicial e final especificados. O caminho será mostrado em vermelho, enquanto os nós e arestas do gráfico serão exibidos em azul.
+
+https://qiao.github.io/PathFinding.js/visual/
+
+https://algorithms.discrete.ma.tum.de/graph-algorithms/spp-a-star/index_en.html
